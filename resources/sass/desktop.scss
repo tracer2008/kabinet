@@ -1,0 +1,412 @@
+@import "style/fonts";
+@import "style/base-elements";
+@import "style/base-styles";
+
+
+.header {
+    padding: 20px 0;
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    width: 100%;
+}
+.header_wrap {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.close_menu,
+.burger {
+    display: none;
+}
+
+.menu_item {
+    padding: 0 24px;
+
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
+    }
+}
+.menu_link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+.contact_link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0E2374;
+    text-align: right;
+    display: block;
+
+    &:hover {
+        color: #0E2374;
+    }
+}
+
+
+
+.home_container_wrap {
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+}
+
+.top_bg {
+    object-fit: cover;
+    height: 700px;
+    position: absolute;
+    top: 0;
+}
+.label_info_desc {
+
+    &:before {
+        content: url("/images/icons/circle-gray.svg");
+        position: absolute;
+        left: 0;
+        top: -1px;
+    }
+}
+
+.home_wrap {
+    padding-top: 88px;
+    height: 700px;
+
+    .label_info_desc {
+
+        &:before {
+            content: url("/images/icons/circle-white.svg");
+        }
+    }
+    .form_control {
+        padding-right: 50px;
+
+    }
+}
+.form_control_wrap {
+    max-width: 370px;
+
+    &:after {
+        content: url("/images/icons/send-mail.svg");
+        position: absolute;
+        top: 4px;
+        right: 3px;
+        z-index: 99999999;
+        display: block;
+        width: 42px;
+        height: 42px;
+    }
+}
+.home_wrap_body {
+    .label_info_desc {
+        color: #fff;
+    }
+}
+.home_wrap_left {
+    width: 50.7%;
+}
+.home_wrap_right {
+    width: 49.3%;
+}
+.h1_desc {
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.label_info_desc {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #959ec2;
+    padding-left: 23px;
+}
+
+.personal_area_left {
+    width: 43%;
+    padding: 50px 15px 0;
+}
+.personal_area_right {
+    width: 57%;
+    padding: 0 15px;
+}
+.personal_area_right_img {
+    position: relative;
+    right: -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "style/responsive";
