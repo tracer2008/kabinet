@@ -1,4 +1,67 @@
 @media (max-width: 576px) {
 
+    .personal_area_left,
+    .personal_area_right {
+        width: 100% !important;
+    }
+    .personal_area_left {
+        margin-bottom: 20px;
+    }
+    .mb-90,
+    .functions_sliders {
+        margin-bottom: 35px !important;
+    }
+    .function_slide_info {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+    .function_slide_img_wrap {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+        padding-left: 0;
+    }
+    .splide__arrows {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    .splide__arrow-icon {
+        width: 25px;
+    }
+    .splide__arrow {
+        padding: 7px;
+
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+    .splide__pagination {
+        display: none !important;
+    }
+    .tab_pane {
+        padding: 20px 30px;
+    }
+    .tab_list {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: scroll;
+        width: auto;
+    }
+    .consultation {
+        margin-top: 0;
+    }
+    .consultation_desc {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .consultation_btn {
+        font-size: 16px;
+        line-height: 23px;
+    }
 
 }

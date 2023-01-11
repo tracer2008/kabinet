@@ -1,3 +1,43 @@
 @media (max-width: 768px) {
 
+    .home_wrap_left {
+        width: 100%;
+    }
+    .home_wrap_right {
+        display: none;
+    }
+    .h2, h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .function_tab_desc {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .function_tab_title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .personal_area_right {
+        display: flex;
+        align-items: center;
+    }
+    .splide__slide {
+        display: flex;
+        align-items: center;
+    }
+    .menu_wrap {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .contact_link {
+        text-align: left;
+    }
+
+
 }

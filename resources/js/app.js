@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             let menu = document.querySelector('.menu_wrap');
             if (menu.classList.contains('show')) {
-                console.log('544654');
                 menu.classList.remove('show');
             }
         })
@@ -37,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+   /*
     //cookie
     let cookieDate = localStorage.getItem('cookieDate');
     let cookieNotification = document.getElementById('cookie_notification');
@@ -52,4 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem( 'cookieDate', Date.now() );
         cookieNotification.classList.remove('show');
     })
+    */
 });

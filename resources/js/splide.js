@@ -2,44 +2,44 @@ import Splide from '@splidejs/splide';
 import "@splidejs/splide/dist/css/splide-core.min.css";
 
 document.addEventListener('DOMContentLoaded', () => {
-    var elms = document.getElementsByClassName( 'splide' );
-// console.log(Splide);
-    for ( var i = 0; i < elms.length; i++ ) {
-        new Splide( elms[ i ], {
-            breakpoints:{
-                425:{
-                    perPage: 2,
-                },
-                700:{
-                    perPage: 2,
-                },
-                1000:{
-                    perPage: 3,
-                },
-                4000:{
-                    perPage: 3,
-                },
-            },
-            width: '370',
-            autoplay: true,
+    var elms_students = document.getElementsByClassName( 'splide_students' );
+    for ( let i = 0; i < elms_students.length; i++ ) {
+        new Splide( elms_students[ i ], {
+            autoplay: false,
             interval: 2000,
             type   : 'loop',
-            // fixedWidth: 370,
+            perPage: 1,
+            gap: 20,
+            arrows: true,
+            pagination: true,
+        } ).mount();
+    }
+
+    var elms_teachers = document.getElementsByClassName( 'splide_teachers' );
+    for ( let i = 0; i < elms_teachers.length; i++ ) {
+        new Splide( elms_teachers[ i ], {
+            autoplay: false,
+            interval: 2000,
+            type   : 'loop',
+            perPage: 1,
             gap: 20,
             arrows: false,
-            pagination: false,
+            pagination: true,
+        } ).mount();
+    }
+
+    var elms_employees = document.getElementsByClassName( 'splide_employees' );
+    for ( let i = 0; i < elms_employees.length; i++ ) {
+        new Splide( elms_employees[ i ], {
+            autoplay: false,
+            interval: 2000,
+            type   : 'loop',
+            perPage: 1,
+            gap: 20,
+            arrows: false,
+            pagination: true,
         } ).mount();
     }
 });
 
 
-/*document.addEventListener('DOMContentLoaded', () => {
-
-    var one_splide = new Splide( '.splide_one_product', {
-        rewind: true,
-        arrows: false,
-        gap: 15,
-    } );
-    one_splide.mount();
-
-});*/

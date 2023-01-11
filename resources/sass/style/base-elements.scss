@@ -84,7 +84,7 @@ sup {
 }
 
 a {
-    color: #4f4f4f;
+    color: #237CE5;
     text-decoration: none;
 }
 a, .btn {
@@ -94,7 +94,7 @@ a:hover,
 a:focus {
     outline: none;
     transition: all .2s;
-    color: #fff;
+    color: #237CE5;
     text-decoration: none;
 }
 p {
@@ -185,18 +185,17 @@ textarea {
 }
 
 .form_group {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
 .form_label {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #0E2374;
     display: block;
-    position: relative;
-    top: 34px;
-    order: 0;
-    transition: all .2s;
+    margin-bottom: 5px;
 
     &.top {
         font-size: 12px;
@@ -434,6 +433,9 @@ textarea {
 .mb-70 {
     margin-bottom: 70px !important;
 }
+.mb-90 {
+    margin-bottom: 90px !important;
+}
 
 .p_offset_90 {
     margin-bottom: 90px !important;
@@ -537,11 +539,23 @@ textarea {
     position: relative;
     z-index: 600;
     width: calc(100% - 30px);
-    max-width: 543px;
+    max-width: 400px;
     background: #fff;
     border: 1px solid #F1F3F5;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(14, 35, 116, 0.15);
     border-radius: 15px;
-    padding: 20px;
+
+    h2 {
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #0E2374;
+        margin-bottom: 30px;
+        display: block;
+    }
 }
 .modal_body {
     max-height: calc(100vh - 150px);
@@ -571,7 +585,8 @@ textarea {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 17px 20px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 .btn-close {
@@ -582,4 +597,130 @@ textarea {
     padding: 0;
     font: inherit;
     outline: none;
+}
+
+
+/////////////////////////////
+///////////TABS//////////////
+/////////////////////////////
+.tab_list {
+    background: rgba(24, 164, 240, 0.09);
+    border-radius: 30px;
+    padding: 10px;
+    width: max-content;
+    margin: 0 auto 30px;
+}
+.tab_item {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0E2374;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .2s;
+
+    &.active {
+        background: #fff;
+        box-shadow: 0 4px 15px rgba(14, 35, 116, 0.15);
+        transition: all .2s;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.tab_content {
+    color: #fff;
+    //height: calc(100vh - 177px);
+    position: relative;
+    //overflow-y: auto;
+    max-width: 970px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #7749F1 0%, #00BBF0 100%);
+    box-shadow: 0 4px 15px rgba(14, 35, 116, 0.15);
+    border-radius: 15px;
+}
+.tab_pane {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s linear;
+    width: 100%;
+    //height: 0vh;
+    overflow: hidden;
+    padding: 30px;
+
+    &.active {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        overflow: visible;
+        transition: all .2s linear;
+    }
+}
+.form_btn {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12.5px;
+    background: linear-gradient(180deg, #7749F1 0%, #00BBF0 100%);
+    box-shadow: 0 4px 15px rgba(14, 35, 116, 0.15);
+    border-radius: 35px;
+    display: block;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.text-red {
+    color: #E24041;
+}
+
+
+.checkbox_data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.checkbox, .radio_box {
+    display: none;
+}
+.checkbox_info {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #0E2374;
+    flex: 1 0;
+}
+.check_checkbox {
+    margin-top: 1px;
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    border: 1px solid #DDDEDE;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.checkbox:checked+.check_checkbox {
+    background: linear-gradient(180deg, #7749F1 0%, #00BBF0 100%);
+
+    &:before {
+        content: url(/images/icons/icon-ok.svg);
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: -2px;
+        left: -1px;
+    }
 }

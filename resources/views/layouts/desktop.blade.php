@@ -22,6 +22,8 @@
         @include("app.include.header")
         @yield('content')
         @include("app.include.footer")
+
+        @include("app.include._modal-form")
     </div>
 </div>
 <script src="{{ mix('js/app.js') }}"></script>

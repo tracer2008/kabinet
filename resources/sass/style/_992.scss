@@ -1,3 +1,67 @@
 @media (max-width: 992px) {
 
+    .top_bg {
+        display: none;
+    }
+    .home_wrap {
+        padding: 60px 15px 30px;
+        height: auto;
+        background: linear-gradient(180deg, #7749F1 0%, #00BBF0 100%);
+    }
+    .burger {
+        line {
+            stroke: #fff;
+        }
+    }
+    .home_wrap_body {
+        align-items: center;
+    }
+    .h1, h1 {
+        font-size: 29px;
+        line-height: 38px;
+    }
+    .h1_desc {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+    .label_info_desc {
+        font-size: 10px;
+    }
+    .personal_area_left {
+        padding-top: 0 !important;
+    }
+    .personal_area {
+        margin-top: 40px;
+    }
+    .personal_area_right_img {
+        right: 0;
+        width: 100%;
+        max-width: 350px !important;
+        margin: auto;
+    }
+    .mb-90,
+    .functions_sliders {
+        margin-bottom: 50px !important;
+    }
+
+    .splide__arrows {
+        display: none;
+    }
+    .consultation {
+        margin-top: 70px;
+    }
+    .consultation_desc {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px !important;
+    }
+    .consultation_btn {
+        margin: auto;
+    }
+
+
+
+
+
 }
